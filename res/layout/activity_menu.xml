@@ -1,0 +1,204 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="788dp"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context=".MenuActivity" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="L Cafe"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/cbNasiAyamOriginal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textView1"
+            android:text="Nasi + Ayam Goreng Original"
+            android:textSize="14dp" />
+
+        <CheckBox
+            android:id="@+id/cbNasiAyamCrispy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/cbNasiAyamOriginal"
+            android:text="Nasi + Ayam Crispy"
+            android:textSize="14dp" />
+
+        <CheckBox
+            android:id="@+id/cbSoft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/cbKentang"
+            android:layout_below="@+id/cbKentang"
+            android:text="Soft Drink"
+            android:textSize="14dp" />
+
+        <CheckBox
+            android:id="@+id/cbAir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/cbSoft"
+            android:text="Air Mineral"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/tvAyamGorengOriginal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/cbNasiAyamOriginal"
+            android:layout_alignBottom="@+id/cbNasiAyamOriginal"
+            android:layout_alignParentRight="true"
+            android:text="0" />
+
+        <TextView
+            android:id="@+id/tvAyamCrispy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/cbNasiAyamCrispy"
+            android:layout_alignBottom="@+id/cbNasiAyamCrispy"
+            android:layout_alignParentRight="true"
+            android:text="0" />
+
+        <TextView
+            android:id="@+id/tvKentang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/cbKentang"
+            android:layout_alignBottom="@+id/cbKentang"
+            android:layout_alignParentRight="true"
+            android:text="0" />
+
+        <TextView
+            android:id="@+id/tvSoftDrink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/cbSoft"
+            android:layout_alignBottom="@+id/cbSoft"
+            android:layout_alignParentRight="true"
+            android:text="0" />
+
+        <TextView
+            android:id="@+id/tvAirMineral"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/cbAir"
+            android:layout_alignBottom="@+id/cbAir"
+            android:layout_alignParentRight="true"
+            android:text="0" />
+
+        <TextView
+            android:id="@+id/tvStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView4"
+            android:layout_alignBottom="@+id/textView4"
+            android:layout_alignParentRight="true"
+            android:text="0" />
+
+        <TextView
+            android:id="@+id/tvTotalBayar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/TextView07"
+            android:layout_below="@+id/TextView07"
+            android:layout_marginTop="30dp"
+            android:layout_toRightOf="@+id/textView1"
+            android:gravity="center"
+            android:text="Rp. 0,-"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView3"
+            android:layout_below="@+id/textView3"
+            android:layout_marginTop="31dp"
+            android:text="Status :" />
+
+        <CheckBox
+            android:id="@+id/cbKentang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/rgPembayaran"
+            android:layout_below="@+id/cbNasiAyamCrispy"
+            android:text="Kentang Goreng"
+            android:textSize="14dp" />
+
+        <RadioGroup
+            android:id="@+id/rgPembayaran"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/cbAir"
+            android:layout_below="@+id/tvAirMineral" >
+
+            <RadioButton
+                android:id="@+id/rbTunai"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Tunai Diskon 0%" />
+
+            <RadioButton
+                android:id="@+id/rbKredit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kredit Diskon 10%" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/rgPembayaran"
+            android:layout_below="@+id/rgPembayaran"
+            android:layout_marginTop="80dp"
+            android:text="Total :" />
+
+        <Button
+            android:id="@+id/bTpesan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/rgPembayaran"
+            android:text="Pesan" />
+
+        <TextView
+            android:id="@+id/TextView07"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/tvStatus"
+            android:layout_below="@+id/tvStatus"
+            android:layout_marginTop="32dp"
+            android:text="Total Bayar :" />
+
+        <TextView
+            android:id="@+id/tvTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView3"
+            android:layout_alignParentRight="true"
+            android:text="0" />
+
+    </RelativeLayout>
+
+</ScrollView>
